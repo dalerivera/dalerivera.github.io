@@ -1,4 +1,5 @@
 'use strict';
+var video;
 
 navigator.getUserMedia = navigator.getUserMedia ||
     navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
@@ -23,6 +24,6 @@ function errorCallback(error) {
 }
 
 $(document).ready(function() {
-  var video = document.querySelector('video');
+  video = document.querySelector('video');
   navigator.getUserMedia(constraints, successCallback, errorCallback);
 });
