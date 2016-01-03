@@ -7,7 +7,7 @@ var constraints = {
   audio: false,
   video: true
 };
-var video = document.querySelector('video');
+
 
 function successCallback(stream) {
   window.stream = stream; // stream available to console
@@ -22,4 +22,7 @@ function errorCallback(error) {
   console.log('navigator.getUserMedia error: ', error);
 }
 
-navigator.getUserMedia(constraints, successCallback, errorCallback);
+$(document).ready(function() {
+  var video = document.querySelector('video');
+  navigator.getUserMedia(constraints, successCallback, errorCallback);
+});
