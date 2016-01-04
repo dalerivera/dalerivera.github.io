@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
         <meta name="mobile-web-app-capable" content="yes">
         <base target="_blank">
         <title>Bass-Base</title>
-        <link rel = 'stylesheet' type = 'text/css' href='main.css'></style>
+        <link rel = 'stylesheet' type = 'text/css' href='main.css'>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     </head>
 
     <body>
@@ -15,8 +17,12 @@
             <video autoplay></video>
 
         </div>
-        
-
+        <div>
+            <button id = 'take_picture'>Take Picture</button>
+        </div>
+        <div id = "canvas_container">
+            <canvas></canvas>
+        </div>
         <script src="js/main.js"></script>
 
     </body>
